@@ -1,0 +1,625 @@
+test> show dbs;
+admin   48.00 KiB
+config  72.00 KiB
+local   72.00 KiB
+test> use admin;
+switched to db admin
+admin> show collections;
+Courses
+system.version
+admin> use Courses
+switched to db Courses
+Courses> $search
+ReferenceError: $search is not defined
+Courses> show dbs
+admin   96.00 KiB
+config  60.00 KiB
+local   72.00 KiB
+Courses>
+
+Courses> use admin
+switched to db admin
+admin> show collections
+Courses
+Student
+system.version
+admin> Student.find()
+ReferenceError: Student is not defined
+admin> db.Student.find()
+[
+  {
+    _id: 0,
+    name: 'aimee Zank',
+    scores: [
+      { score: 1.463179736705023, type: 'exam' },
+      { score: 11.78273309957772, type: 'quiz' },
+      { score: 35.8740349954354, type: 'homework' }
+    ]
+  },
+  {
+    _id: 1,
+    name: 'Aurelia Menendez',
+    scores: [
+      { score: 60.06045071030959, type: 'exam' },
+      { score: 52.79790691903873, type: 'quiz' },
+      { score: 71.76133439165544, type: 'homework' }
+    ]
+  },
+  {
+    _id: 2,
+    name: 'Corliss Zuk',
+    scores: [
+      { score: 67.03077096065002, type: 'exam' },
+      { score: 6.301851677835235, type: 'quiz' },
+      { score: 66.28344683278382, type: 'homework' }
+    ]
+  },
+  {
+    _id: 3,
+    name: 'Bao Ziglar',
+    scores: [
+      { score: 71.64343899778332, type: 'exam' },
+      { score: 24.80221293650313, type: 'quiz' },
+      { score: 42.26147058804812, type: 'homework' }
+    ]
+  },
+  {
+    _id: 4,
+    name: 'Zachary Langlais',
+    scores: [
+      { score: 78.68385091304332, type: 'exam' },
+      { score: 90.2963101368042, type: 'quiz' },
+      { score: 34.41620148042529, type: 'homework' }
+    ]
+  },
+  {
+    _id: 5,
+    name: 'Wilburn Spiess',
+    scores: [
+      { score: 44.87186330181261, type: 'exam' },
+      { score: 25.72395114668016, type: 'quiz' },
+      { score: 63.42288310628662, type: 'homework' }
+    ]
+  },
+  {
+    _id: 6,
+    name: 'Jenette Flanders',
+    scores: [
+      { score: 37.32285459166097, type: 'exam' },
+      { score: 28.32634976913737, type: 'quiz' },
+      { score: 81.57115318686338, type: 'homework' }
+    ]
+  },
+  {
+    _id: 7,
+    name: 'Salena Olmos',
+    scores: [
+      { score: 90.37826509157176, type: 'exam' },
+      { score: 42.48780666956811, type: 'quiz' },
+      { score: 96.52986171633331, type: 'homework' }
+    ]
+  },
+  {
+    _id: 8,
+    name: 'Daphne Zheng',
+    scores: [
+      { score: 22.13583712862635, type: 'exam' },
+      { score: 14.63969941335069, type: 'quiz' },
+      { score: 75.94123677556644, type: 'homework' }
+    ]
+  },
+  {
+    _id: 9,
+    name: 'Sanda Ryba',
+    scores: [
+      { score: 97.00509953654694, type: 'exam' },
+      { score: 97.80449632538915, type: 'quiz' },
+      { score: 25.27368532432955, type: 'homework' }
+    ]
+  },
+  {
+    _id: 10,
+    name: 'Denisha Cast',
+    scores: [
+      { score: 45.61876862259409, type: 'exam' },
+      { score: 98.35723209418343, type: 'quiz' },
+      { score: 55.90835657173456, type: 'homework' }
+    ]
+  },
+  {
+    _id: 11,
+    name: 'Marcus Blohm',
+    scores: [
+      { score: 78.42617835651868, type: 'exam' },
+      { score: 82.58372817930675, type: 'quiz' },
+      { score: 87.49924733328717, type: 'homework' }
+    ]
+  },
+  {
+    _id: 12,
+    name: 'Quincy Danaher',
+    scores: [
+      { score: 54.29841278520669, type: 'exam' },
+      { score: 85.61270164694737, type: 'quiz' },
+      { score: 80.40732356118075, type: 'homework' }
+    ]
+  },
+  {
+    _id: 13,
+    name: 'Jessika Dagenais',
+    scores: [
+      { score: 90.47179954427436, type: 'exam' },
+      { score: 90.3001402468489, type: 'quiz' },
+      { score: 95.17753772405909, type: 'homework' }
+    ]
+  },
+  {
+    _id: 14,
+    name: 'Alix Sherrill',
+    scores: [
+      { score: 25.15924151998215, type: 'exam' },
+      { score: 68.64484047692098, type: 'quiz' },
+      { score: 24.68462152686763, type: 'homework' }
+    ]
+  },
+  {
+    _id: 15,
+    name: 'Tambra Mercure',
+    scores: [
+      { score: 69.1565022533158, type: 'exam' },
+      { score: 3.311794422000724, type: 'quiz' },
+      { score: 45.03178973642521, type: 'homework' }
+    ]
+  },
+  {
+    _id: 16,
+    name: 'Dodie Staller',
+    scores: [
+      { score: 7.772386442858281, type: 'exam' },
+      { score: 31.84300235104542, type: 'quiz' },
+      { score: 80.52136407989194, type: 'homework' }
+    ]
+  },
+  {
+    _id: 17,
+    name: 'Fletcher Mcconnell',
+    scores: [
+      { score: 39.41011069729274, type: 'exam' },
+      { score: 81.13270307809924, type: 'quiz' },
+      { score: 97.70116640402922, type: 'homework' }
+    ]
+  },
+  {
+    _id: 18,
+    name: 'Verdell Sowinski',
+    scores: [
+      { score: 62.12870233109035, type: 'exam' },
+      { score: 84.74586220889356, type: 'quiz' },
+      { score: 81.58947824932574, type: 'homework' }
+    ]
+  },
+  {
+    _id: 19,
+    name: 'Gisela Levin',
+    scores: [
+      { score: 44.51211101958831, type: 'exam' },
+      { score: 0.6578497966368002, type: 'quiz' },
+      { score: 93.36341655949683, type: 'homework' }
+    ]
+  }
+]
+Type "it" for more
+admin> it
+[
+  {
+    _id: 20,
+    name: 'Tressa Schwing',
+    scores: [
+      { score: 42.17439799514388, type: 'exam' },
+      { score: 71.99314840599558, type: 'quiz' },
+      { score: 81.23972632069464, type: 'homework' }
+    ]
+  },
+  {
+    _id: 21,
+    name: 'Rosana Vales',
+    scores: [
+      { score: 46.2289476258328, type: 'exam' },
+      { score: 98.34164225207036, type: 'quiz' },
+      { score: 36.18769746805938, type: 'homework' }
+    ]
+  },
+  {
+    _id: 22,
+    name: 'Margart Vitello',
+    scores: [
+      { score: 75.04996547553947, type: 'exam' },
+      { score: 10.23046475899236, type: 'quiz' },
+      { score: 96.72520512117761, type: 'homework' }
+    ]
+  },
+  {
+    _id: 23,
+    name: 'Tamika Schildgen',
+    scores: [
+      { score: 45.65432764125526, type: 'exam' },
+      { score: 64.32927049658846, type: 'quiz' },
+      { score: 83.53933351660562, type: 'homework' }
+    ]
+  },
+  {
+    _id: 24,
+    name: 'Jesusa Rickenbacker',
+    scores: [
+      { score: 86.0319702155683, type: 'exam' },
+      { score: 1.967495200433389, type: 'quiz' },
+      { score: 61.10861071547914, type: 'homework' }
+    ]
+  },
+  {
+    _id: 25,
+    name: 'Rudolph Domingo',
+    scores: [
+      { score: 74.75289335591543, type: 'exam' },
+      { score: 38.5413647805495, type: 'quiz' },
+      { score: 35.2554340953413, type: 'homework' }
+    ]
+  },
+  {
+    _id: 26,
+    name: 'Jonie Raby',
+    scores: [
+      { score: 19.17861192576963, type: 'exam' },
+      { score: 76.3890359749654, type: 'quiz' },
+      { score: 44.39605672647002, type: 'homework' }
+    ]
+  },
+  {
+    _id: 27,
+    name: 'Edgar Sarkis',
+    scores: [
+      { score: 8.606983261043888, type: 'exam' },
+      { score: 58.71180464203724, type: 'quiz' },
+      { score: 15.33726210596508, type: 'homework' }
+    ]
+  },
+  {
+    _id: 28,
+    name: 'Laureen Salomone',
+    scores: [
+      { score: 3.677565278992456, type: 'exam' },
+      { score: 7.119462599229987, type: 'quiz' },
+      { score: 82.87308922617427, type: 'homework' }
+    ]
+  },
+  {
+    _id: 29,
+    name: 'Gwyneth Garling',
+    scores: [
+      { score: 48.36644963899371, type: 'exam' },
+      { score: 10.37827022865908, type: 'quiz' },
+      { score: 93.26639335532833, type: 'homework' }
+    ]
+  },
+  {
+    _id: 30,
+    name: 'Kaila Deibler',
+    scores: [
+      { score: 15.89771199662455, type: 'exam' },
+      { score: 56.93965183412178, type: 'quiz' },
+      { score: 66.64493295066322, type: 'homework' }
+    ]
+  },
+  {
+    _id: 31,
+    name: 'Tandra Meadows',
+    scores: [
+      { score: 24.90138146001744, type: 'exam' },
+      { score: 28.8266541837344, type: 'quiz' },
+      { score: 97.16831550665721, type: 'homework' }
+    ]
+  },
+  {
+    _id: 32,
+    name: 'Gwen Honig',
+    scores: [
+      { score: 87.14345376886205, type: 'exam' },
+      { score: 99.45824441135635, type: 'quiz' },
+      { score: 76.66460454219344, type: 'homework' }
+    ]
+  },
+  {
+    _id: 33,
+    name: 'Sadie Jernigan',
+    scores: [
+      { score: 73.15861249943812, type: 'exam' },
+      { score: 2.987718065941702, type: 'quiz' },
+      { score: 82.54104198590488, type: 'homework' }
+    ]
+  },
+  {
+    _id: 34,
+    name: 'Carli Belvins',
+    scores: [
+      { score: 7.112266875518214, type: 'exam' },
+      { score: 67.734668378287, type: 'quiz' },
+      { score: 88.99855402666871, type: 'homework' }
+    ]
+  },
+  {
+    _id: 35,
+    name: 'Synthia Labelle',
+    scores: [
+      { score: 27.22049103148209, type: 'exam' },
+      { score: 31.28760039265919, type: 'quiz' },
+      { score: 79.23285425688643, type: 'homework' }
+    ]
+  },
+  {
+    _id: 36,
+    name: 'Eugene Magdaleno',
+    scores: [
+      { score: 73.055900093666, type: 'exam' },
+      { score: 79.85621560462026, type: 'quiz' },
+      { score: 66.09143669040472, type: 'homework' }
+    ]
+  },
+  {
+    _id: 37,
+    name: 'Meagan Oakes',
+    scores: [
+      { score: 86.06759716616264, type: 'exam' },
+      { score: 79.45097452834857, type: 'quiz' },
+      { score: 28.41090281547689, type: 'homework' }
+    ]
+  },
+  {
+    _id: 38,
+    name: 'Richelle Siemers',
+    scores: [
+      { score: 34.64373397163318, type: 'exam' },
+      { score: 91.46799649446983, type: 'quiz' },
+      { score: 56.12615074082559, type: 'homework' }
+    ]
+  },
+  {
+    _id: 39,
+    name: 'Mariette Batdorf',
+    scores: [
+      { score: 0.04381116979284005, type: 'exam' },
+      { score: 90.25774974259562, type: 'quiz' },
+      { score: 65.88612319625227, type: 'homework' }
+    ]
+  }
+]
+Type "it" for more
+admin> db.Student.find($max:{'Scores':)
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:20)
+
+> 1 | db.Student.find($max:{'Scores':)
+    |                     ^
+  2 |
+
+admin> db.Student.find($max:{'Scores':{'score'}})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:20)
+
+> 1 | db.Student.find($max:{'Scores':{'score'}})
+    |                     ^
+  2 |
+
+admin> db.Student.aggregate([{$project:{'name':1,'max_score':"$Scores.score"}])
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:70)
+
+> 1 | db.Student.aggregate([{$project:{'name':1,'max_score':"$Scores.score"}])
+    |                                                                       ^
+  2 |
+
+admin> db.Student.aggregate([{$project:{name:1,max_score:"$Scores.score"}])
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:66)
+
+> 1 | db.Student.aggregate([{$project:{name:1,max_score:"$Scores.score"}])
+    |                                                                   ^
+  2 |
+
+admin> db.Student.aggregate([{$project:{name:1,{max_score:"$Scores.score"}}])
+Uncaught:
+SyntaxError: Unexpected token (1:40)
+
+> 1 | db.Student.aggregate([{$project:{name:1,{max_score:"$Scores.score"}}])
+    |                                         ^
+  2 |
+
+admin> db.Student.aggregate([
+...   {
+...     $project: {
+...       name: 1,
+...       maxScore: {
+...         $max: "$scores.score"
+...       }
+...     }
+...
+...
+... }
+... emd
+Uncaught:
+SyntaxError: Unexpected token, expected "," (12:0)
+
+  10 |
+  11 | }
+> 12 | emd
+     | ^
+  13 |
+
+admin> db.Student.aggregate([ { $project: { name: 1, maxScore: { $max: "$scores.score" } } }])
+[
+  { _id: 0, name: 'aimee Zank', maxScore: 35.8740349954354 },
+  { _id: 1, name: 'Aurelia Menendez', maxScore: 71.76133439165544 },
+  { _id: 2, name: 'Corliss Zuk', maxScore: 67.03077096065002 },
+  { _id: 3, name: 'Bao Ziglar', maxScore: 71.64343899778332 },
+  { _id: 4, name: 'Zachary Langlais', maxScore: 90.2963101368042 },
+  { _id: 5, name: 'Wilburn Spiess', maxScore: 63.42288310628662 },
+  { _id: 6, name: 'Jenette Flanders', maxScore: 81.57115318686338 },
+  { _id: 7, name: 'Salena Olmos', maxScore: 96.52986171633331 },
+  { _id: 8, name: 'Daphne Zheng', maxScore: 75.94123677556644 },
+  { _id: 9, name: 'Sanda Ryba', maxScore: 97.80449632538915 },
+  { _id: 10, name: 'Denisha Cast', maxScore: 98.35723209418343 },
+  { _id: 11, name: 'Marcus Blohm', maxScore: 87.49924733328717 },
+  { _id: 12, name: 'Quincy Danaher', maxScore: 85.61270164694737 },
+  { _id: 13, name: 'Jessika Dagenais', maxScore: 95.17753772405909 },
+  { _id: 14, name: 'Alix Sherrill', maxScore: 68.64484047692098 },
+  { _id: 15, name: 'Tambra Mercure', maxScore: 69.1565022533158 },
+  { _id: 16, name: 'Dodie Staller', maxScore: 80.52136407989194 },
+  { _id: 17, name: 'Fletcher Mcconnell', maxScore: 97.70116640402922 },
+  { _id: 18, name: 'Verdell Sowinski', maxScore: 84.74586220889356 },
+  { _id: 19, name: 'Gisela Levin', maxScore: 93.36341655949683 }
+]
+Type "it" for more
+admin> db.Student.aggregate([ { $project: { name: 1, maxScore: { $max: "$scores.score" } } }],)
+[
+  { _id: 0, name: 'aimee Zank', maxScore: 35.8740349954354 },
+  { _id: 1, name: 'Aurelia Menendez', maxScore: 71.76133439165544 },
+  { _id: 2, name: 'Corliss Zuk', maxScore: 67.03077096065002 },
+  { _id: 3, name: 'Bao Ziglar', maxScore: 71.64343899778332 },
+  { _id: 4, name: 'Zachary Langlais', maxScore: 90.2963101368042 },
+  { _id: 5, name: 'Wilburn Spiess', maxScore: 63.42288310628662 },
+  { _id: 6, name: 'Jenette Flanders', maxScore: 81.57115318686338 },
+  { _id: 7, name: 'Salena Olmos', maxScore: 96.52986171633331 },
+  { _id: 8, name: 'Daphne Zheng', maxScore: 75.94123677556644 },
+  { _id: 9, name: 'Sanda Ryba', maxScore: 97.80449632538915 },
+  { _id: 10, name: 'Denisha Cast', maxScore: 98.35723209418343 },
+  { _id: 11, name: 'Marcus Blohm', maxScore: 87.49924733328717 },
+  { _id: 12, name: 'Quincy Danaher', maxScore: 85.61270164694737 },
+  { _id: 13, name: 'Jessika Dagenais', maxScore: 95.17753772405909 },
+  { _id: 14, name: 'Alix Sherrill', maxScore: 68.64484047692098 },
+  { _id: 15, name: 'Tambra Mercure', maxScore: 69.1565022533158 },
+  { _id: 16, name: 'Dodie Staller', maxScore: 80.52136407989194 },
+  { _id: 17, name: 'Fletcher Mcconnell', maxScore: 97.70116640402922 },
+  { _id: 18, name: 'Verdell Sowinski', maxScore: 84.74586220889356 },
+  { _id: 19, name: 'Gisela Levin', maxScore: 93.36341655949683 }
+]
+Type "it" for more
+admin> db.Student.aggregate([ { $project: { name: 1, maxScore: { $max: "$scores.score" } } },{$sort : {maxScore:-1}}])
+[
+  { _id: 69, name: 'Cody Strouth', maxScore: 99.80348240553108 },
+  { _id: 178, name: 'Whitley Fears', maxScore: 99.77237745070993 },
+  { _id: 32, name: 'Gwen Honig', maxScore: 99.45824441135635 },
+  { _id: 136, name: 'Margart Vitello', maxScore: 99.33685767140612 },
+  { _id: 172, name: 'Joaquina Arbuckle', maxScore: 99.13868686848834 },
+  {
+    _id: 157,
+    name: 'Ernestine Macfarland',
+    maxScore: 98.76040135775126
+  },
+  { _id: 192, name: 'Len Treiber', maxScore: 98.71679252899352 },
+  { _id: 88, name: 'Keesha Papadopoulos', maxScore: 98.46867828216399 },
+  { _id: 10, name: 'Denisha Cast', maxScore: 98.35723209418343 },
+  { _id: 21, name: 'Rosana Vales', maxScore: 98.34164225207036 },
+  { _id: 44, name: 'Houston Valenti', maxScore: 98.06441387027331 },
+  { _id: 159, name: 'Terica Brugger', maxScore: 97.822030541043 },
+  { _id: 9, name: 'Sanda Ryba', maxScore: 97.80449632538915 },
+  { _id: 17, name: 'Fletcher Mcconnell', maxScore: 97.70116640402922 },
+  { _id: 42, name: 'Kayce Kenyon', maxScore: 97.43587143437509 },
+  { _id: 48, name: 'Barbera Lippman', maxScore: 97.42074160188449 },
+  { _id: 166, name: 'Tawana Oberg', maxScore: 97.28127199858804 },
+  { _id: 31, name: 'Tandra Meadows', maxScore: 97.16831550665721 },
+  { _id: 127, name: 'Jessika Dagenais', maxScore: 96.93459855769822 },
+  { _id: 22, name: 'Margart Vitello', maxScore: 96.72520512117761 }
+]
+Type "it" for more
+admin> db.Student.aggregate([ { $project: { name: 1, maxScore: { $max: "$scores.score" } } },{$sort : {maxScore:-1}},{$limit : -1}])
+MongoServerError: invalid argument to $limit stage: Expected a non-negative number in: $limit: -1
+admin> db.Student.aggregate([ { $project: { name: 1, maxScore: { $max: "$scores.score" } } },{$sort : {maxScore:-1}},{$limit : 1}])
+[ { _id: 69, name: 'Cody Strouth', maxScore: 99.80348240553108 } ]
+admin> db.Student.aggregate([ { $project: { name: 1, totalScore: { $sum: "$scores.score" } } },{$sort : {totalScore:-1}},{$limit : 1}])
+[
+  { _id: 13, name: 'Jessika Dagenais', totalScore: 275.94947751518237 }
+]
+admin> db.Student.find({_id:13})
+[
+  {
+    _id: 13,
+    name: 'Jessika Dagenais',
+    scores: [
+      { score: 90.47179954427436, type: 'exam' },
+      { score: 90.3001402468489, type: 'quiz' },
+      { score: 95.17753772405909, type: 'homework' }
+    ]
+  }
+]
+admin> db.Student.find({_id:69})
+[
+  {
+    _id: 69,
+    name: 'Cody Strouth',
+    scores: [
+      { score: 4.784730508547719, type: 'exam' },
+      { score: 99.80348240553108, type: 'quiz' },
+      { score: 97.89665889862901, type: 'homework' }
+    ]
+  }
+]
+admin> db.Student.aggregate([ {$project : {"$scores.type":1,AverageScore : {$avg : "$scores.score"}}}])
+MongoServerError: Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField.
+admin> db.Student.aggregate([ {$project : {type:1,AverageScore : {$avg : "$scores.score"}}}])
+[
+  { _id: 0, AverageScore: 16.373315943906046 },
+  { _id: 1, AverageScore: 61.53989734033458 },
+  { _id: 2, AverageScore: 46.53868982375636 },
+  { _id: 3, AverageScore: 46.23570750744486 },
+  { _id: 4, AverageScore: 67.79878751009093 },
+  { _id: 5, AverageScore: 44.67289918492647 },
+  { _id: 6, AverageScore: 49.07345251588723 },
+  { _id: 7, AverageScore: 76.46531115915774 },
+  { _id: 8, AverageScore: 37.57225777251449 },
+  { _id: 9, AverageScore: 73.36109372875522 },
+  { _id: 10, AverageScore: 66.62811909617069 },
+  { _id: 11, AverageScore: 82.83638462303753 },
+  { _id: 12, AverageScore: 73.4394793311116 },
+  { _id: 13, AverageScore: 91.98315917172745 },
+  { _id: 14, AverageScore: 39.49623450792358 },
+  { _id: 15, AverageScore: 39.16669547058058 },
+  { _id: 16, AverageScore: 40.045584291265214 },
+  { _id: 17, AverageScore: 72.7479933931404 },
+  { _id: 18, AverageScore: 76.15468092976988 },
+  { _id: 19, AverageScore: 46.17779245857398 }
+]
+Type "it" for more
+admin> db.Student.find({_id:0})
+[
+  {
+    _id: 0,
+    name: 'aimee Zank',
+    scores: [
+      { score: 1.463179736705023, type: 'exam' },
+      { score: 11.78273309957772, type: 'quiz' },
+      { score: 35.8740349954354, type: 'homework' }
+    ]
+  }
+]
+admin> db.Student.aggregate([ {$project : {type:'exam',AverageScore : {$avg : "$scores.score"}}}])
+[
+  { _id: 0, type: 'exam', AverageScore: 16.373315943906046 },
+  { _id: 1, type: 'exam', AverageScore: 61.53989734033458 },
+  { _id: 2, type: 'exam', AverageScore: 46.53868982375636 },
+  { _id: 3, type: 'exam', AverageScore: 46.23570750744486 },
+  { _id: 4, type: 'exam', AverageScore: 67.79878751009093 },
+  { _id: 5, type: 'exam', AverageScore: 44.67289918492647 },
+  { _id: 6, type: 'exam', AverageScore: 49.07345251588723 },
+  { _id: 7, type: 'exam', AverageScore: 76.46531115915774 },
+  { _id: 8, type: 'exam', AverageScore: 37.57225777251449 },
+  { _id: 9, type: 'exam', AverageScore: 73.36109372875522 },
+  { _id: 10, type: 'exam', AverageScore: 66.62811909617069 },
+  { _id: 11, type: 'exam', AverageScore: 82.83638462303753 },
+  { _id: 12, type: 'exam', AverageScore: 73.4394793311116 },
+  { _id: 13, type: 'exam', AverageScore: 91.98315917172745 },
+  { _id: 14, type: 'exam', AverageScore: 39.49623450792358 },
+  { _id: 15, type: 'exam', AverageScore: 39.16669547058058 },
+  { _id: 16, type: 'exam', AverageScore: 40.045584291265214 },
+  { _id: 17, type: 'exam', AverageScore: 72.7479933931404 },
+  { _id: 18, type: 'exam', AverageScore: 76.15468092976988 },
+  { _id: 19, type: 'exam', AverageScore: 46.17779245857398 }
+]
